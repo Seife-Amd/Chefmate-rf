@@ -1,0 +1,136 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.main-table {
+    width: 100%;
+    margin: 20px;
+    border: 2px solid #28a745;
+    position: relative;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.blue-button { background-color: #007BFF; }
+.green-button { background-color: #28a745; }
+.red-button { background-color: #dc3545; }
+.yellow-button { background-color: #ffc107; }
+.purple-button { background-color: #6f42c1; }
+.orange-button { background-color: #fd7e14; } /* New button color for gesture recognition */
+.logout-button {
+    background-color: #9e1661;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: scale(1.05); /* Slight increase in size on hover for better visual feedback */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+}
+
+#video-container {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 1000;
+}
+
+#video, #video-buffer {
+    border: 3px solid #28a745;
+    border-radius: 8px;
+    display: block; /* Ensure they are always visible */
+    margin: 10px auto;
+}
+
+#results-area {
+    width: 100%;
+    margin: 20px;
+}
+
+#recipe-results {
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #28a745;
+}
+
+#search-history {
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #28a745;
+}
+
+.datetime-display {
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+#recipe-details {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #28a745;
+    background-color: #fff;
+}
+/*Back to usrlogin page*/
+.violet-button {
+    background-color: #42c15b;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin-top for spacing */
+}
+
+.violet-button:hover {
+    background-color: #5931a8;
+}
+/* button that redirects to Admin Page from UserLogin*/
+.violet-button {
+    background-color: #42c190;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin-top for spacing */
+}
+
+.violet-button:hover {
+    background-color: #5931a8;
+}
+

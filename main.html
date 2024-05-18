@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="main-table">
+        <tr>
+            <th colspan="2">
+                <h1 style="color: #c5d0c8;">ChefMate Recipe Finder</h1>
+                <!--<img src="images\logo11.jpg" alt="Recipe Finder Logo" class="logo">
+        <p id="timer-display">Timer: 00:00:00</p>
+        <button id="record-button">Start Recording</button>-->
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="input-area">
+                    <input type="text" id="ingredient-input" placeholder="Enter ingredients here...">
+                    <button id="search-button" class="blue-button">Search Recipes</button>
+                    <button id="speak-button" class="green-button">Speak</button>
+                    <button id="stop-button" class="red-button" style="display:none;">Stop</button>
+                    <button id="camera-button" class="yellow-button">Use V-Camera</button>
+                    <button id="gesture-recognition-button" class="orange-button">Gesture Recognition</button>
+                    <button id="view-history-button" class="purple-button">View History</button>
+                    <button id="clear-history-button" class="red-button">Clear History</button>
+                    <button id="logout-button" class="logout-button">
+                        <img src="images/logoutg.jpg" alt="Logout" style="vertical-align: middle; width: 40px; height: 40px;">
+                        Logout
+                    </button>
+                    <p id="voice-input-display"></p>
+                    <span id="datetime-display" class="datetime-display"></span>
+                </div>
+                <div id="video-container">
+                    <video id="video" width="320" height="240" autoplay style="display:none;"></video>
+                    <canvas id="video-buffer" width="320" height="240" style="display:none;"></canvas>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="results-area">
+        <table id="recipe-results">
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Recipes</th>
+                </tr>
+            </thead>
+            <tbody id="recipe-body"></tbody>
+        </table>
+        <button id="download-button" class="blue-button" style="display:none;">Download Results</button>
+    </div>
+    <div id="recipe-details" style="display:none;">
+        <h2 id="recipe-name"></h2>
+        <img id="recipe-image" src="" alt="Recipe Image" style="max-width: 100%; height: auto;">
+        <ol id="recipe-steps"></ol>
+    </div>
+    <div id="history-area">
+        <table id="search-history" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Recipes</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 UniFri</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

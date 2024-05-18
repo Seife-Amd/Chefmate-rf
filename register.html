@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Chefmate Recipe Finder</title>
+    <link rel="stylesheet" href="register-styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo-title-container">
+            <img src="images/logo11.jpg" alt="Chefmate Logo" class="logo">
+            <h1 class="title">ChefMate Recipe Finder</h1>
+        </div>
+        <table class="form-table">
+            <tr>
+                <td>
+                    <div class="form-container">
+                        <form id="register-form">
+                            <label for="new-username">Username</label>
+                            <input type="text" id="new-username" name="new-username" required>
+                            <label for="new-password">Password</label>
+                            <input type="password" id="new-password" name="new-password" required>
+                            <button type="submit" class="green-button">Register</button>
+                        </form>
+                        <p id="register-error-message" class="error-message"></p>
+                        <p>Already have an account? <a href="login.html">Login here</a></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="message-box" class="message-box" style="display: none;">
+        <p id="message-text"></p>
+        <button id="close-message-button" class="green-button">Close</button>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
